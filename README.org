@@ -1,0 +1,80 @@
+* Fall 2021 235 Linked List Project
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+Due dates: 
+- Part 1 Thursday 2/25 8:00am
+- Part 2 Monday March 1 (tentative) 
+
+
+* General instructions:
+- Fill in your name and GitHub username on top.
+- solve one of the three problems below
+- you must use a Makefile to build the project. The executable should
+  be named *main*. This project should use also doctest based
+  tests. The Makefile should have, in addition to the *main* target
+  another target named *tests* which will build an executable to run
+  the doctest tests. These tests should show all the capabilities of
+  your project.
+
+* Preperation.
+
+Before working on the coding part of this assignment watch these three
+videos: 
+
+- https://youtu.be/mSQjWDAQx-o
+- https://youtu.be/Nj-hc0LvYjU
+- https://youtu.be/XRGqxNdNLAE
+
+* Part 1
+This repository has the starter code that was developed in the
+videos. You should build off of these. You can modify them and also
+add additional files if you'd like. Make sure to update the Makefile
+as needed.
+
+Add the following functions to the List class: 
+
+Sample list l1: 
+
+#+begin_example
+l1:
+        0   1   2   3   4
+head--->a-->b-->c-->d-->e-->nullptr
+
+#+end_example
+
+- ~void List::insert(int loc, std::string data)~ - this should insert a new node
+  into the list prior to location *loc* with the specified *data*. The
+  first node is numbered *0*. Given the above example, the call
+  ~l1->insert(2,"X")~ would result in
+
+#+begin_example
+l1:
+        0   1   2   3   4   5    
+head--->a-->b-->X-->c-->d-->e-->nullptr
+
+#+end_example
+
+- ~void List::remove(int loc)~  - this should remove the node at
+  location *loc*. If you did the above insert then called
+  ~l1->remove(2)~ you would end up with the original example again. 
+
+- ~std::string List::get(int loc)~ - this should return the item at
+  location *loc* (and do something sensible if *loc* is not in
+  bounds). For the original list, ~l1->get(3)~ would return *c*. Note
+  that later we will overload the [] operator to accomplish this.
+
+- ~void List::~List() - the destructor. This should delete all  the
+  nodes in the list freeing all the memory.
+
+
+
+* Part 2
+
+This will be assigned separately after next Thursday's class. 
