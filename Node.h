@@ -1,7 +1,7 @@
 #pragma once
 
 
-class Node{
+class Node {
  private:
   std::string data;
   Node *next;
@@ -13,8 +13,8 @@ class Node{
 
   void setData(std::string data);
   void setNext(Node *next);
-  
+
   std::string getData();
   Node *getNext();
-  
+
 };

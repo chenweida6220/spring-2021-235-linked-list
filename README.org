@@ -1,16 +1,16 @@
 * Fall 2021 235 Linked List Project
 
-* Last name:
+* Last name: Chen
 
-* First name:
+* First name: Wei Da
 
-* GitHub username:
+* GitHub username: chenweida6220
 
 * Notes:
 
-Due dates: 
+Due dates:
 - Part 1 Thursday 2/25 8:00am
-- Part 2 Monday March 1 (tentative) 
+- Part 2 Monday March 1 (tentative)
 
 
 * General instructions:
@@ -26,7 +26,7 @@ Due dates:
 * Preperation.
 
 Before working on the coding part of this assignment watch these three
-videos: 
+videos:
 
 - https://youtu.be/mSQjWDAQx-o
 - https://youtu.be/Nj-hc0LvYjU
@@ -38,9 +38,9 @@ videos. You should build off of these. You can modify them and also
 add additional files if you'd like. Make sure to update the Makefile
 as needed.
 
-Add the following functions to the List class: 
+Add the following functions to the List class:
 
-Sample list l1: 
+Sample list l1:
 
 #+begin_example
 l1:
@@ -56,14 +56,14 @@ head--->a-->b-->c-->d-->e-->nullptr
 
 #+begin_example
 l1:
-        0   1   2   3   4   5    
+        0   1   2   3   4   5
 head--->a-->b-->X-->c-->d-->e-->nullptr
 
 #+end_example
 
 - ~void List::remove(int loc)~  - this should remove the node at
   location *loc*. If you did the above insert then called
-  ~l1->remove(2)~ you would end up with the original example again. 
+  ~l1->remove(2)~ you would end up with the original example again.
 
 - ~std::string List::get(int loc)~ - this should return the item at
   location *loc* (and do something sensible if *loc* is not in
@@ -77,4 +77,4 @@ head--->a-->b-->X-->c-->d-->e-->nullptr
 
 * Part 2
 
-This will be assigned separately after next Thursday's class. 
+This will be assigned separately after next Thursday's class.
