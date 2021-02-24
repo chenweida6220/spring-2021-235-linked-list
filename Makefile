@@ -14,4 +14,4 @@ Node.o: Node.cpp Node.h
 
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) main
