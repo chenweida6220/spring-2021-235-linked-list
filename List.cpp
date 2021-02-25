@@ -11,7 +11,7 @@ void List::insert(string data){
   // create a new node
   Node *new_node = new Node(data);
 
-  // insert the new node
+  // insert the new node  
   new_node->setNext(head);
   head = new_node;
   }
