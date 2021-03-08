@@ -11,7 +11,7 @@ void List::insert(string data){
   // create a new node
   Node *new_node = new Node(data);
 
-  // insert the new node  
+  // insert the new node
   new_node->setNext(head);
   head = new_node;
   }
@@ -100,11 +100,12 @@ List::~List() {
 string List::toString(){
   Node *walker = head;
   string s = "";
+
   while (walker != nullptr){
     s = s + walker->getData() + "-->";
     walker = walker->getNext();
-
   }
-  s=s+"nullptr";
+
+  s = s+"nullptr";
   return s;
 }
